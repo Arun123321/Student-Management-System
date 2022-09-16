@@ -15,21 +15,27 @@ class Mark extends Model
     {
         return $this->student()->get()->first()->name;
     }
+
+      /*
+     Convert sql time to more human readble format
+    */
     public function getFormattedDateAttribute()
     {
         $new_date = date('F d  Y, h:i:s A', strtotime($this->attributes['created_at'])); 
         return  $new_date;
     }
+
     public function getTotalMarksTermTwoAttribute()
     {
         return $this->student()->get()->first()->total_marks_term_two;
 
     }
-   
+
     public function getTotalMarksTermOneAttribute()
     {
         return $this->student()->get()->first()->total_marks_term_one;
     }
+    
     public function getSubjectAttribute()
     {
         return $this->subject()->get()->first()->name;

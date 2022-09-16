@@ -25,7 +25,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Creating new student
      *
      * @return \Illuminate\Http\Response
      */
@@ -66,7 +66,7 @@ class StudentController extends Controller
         //
     }
     /**
-     * Add mark a newly created resource in storage.
+     * Add marks to students.
      *
      * @param  \App\Http\Requests\StoreStudentRequest  $request
      * @return \Illuminate\Http\Response
@@ -105,6 +105,11 @@ class StudentController extends Controller
        ]);
 
     }
+
+/**
+     * Update marks.
+     *
+     */
 
     public function editMark(Request $request)
     {
@@ -168,7 +173,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update Students data.
      *
      * @param  \App\Http\Requests\UpdateStudentRequest  $request
      * @param  \App\Models\Student  $student
@@ -199,7 +204,7 @@ class StudentController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove student data.
      *
      * @param  \App\Models\Student  $student
      * @return \Illuminate\Http\Response
@@ -220,6 +225,11 @@ class StudentController extends Controller
             return Redirect::route('dashboard');
         }
     }
+
+  /**
+     * Remove mark data.
+     *
+     */
 
     public function deleteMarks(Request $request)
     {

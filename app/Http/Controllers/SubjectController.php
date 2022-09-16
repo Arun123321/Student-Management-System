@@ -20,7 +20,7 @@ class SubjectController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Creating new Subject
      *
      * @return \Illuminate\Http\Response
      */

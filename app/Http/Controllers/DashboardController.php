@@ -8,7 +8,12 @@ use App\Models\Subject;
 
 class DashboardController extends Controller
 {
-    //
+   /*
+This Function is responsible for rendering the dashboard after authentication
+
+Every Data required is passed via Inertia to React Component using props
+
+*/
 
 public function render()
 {
