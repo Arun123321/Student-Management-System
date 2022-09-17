@@ -26,7 +26,7 @@ Clone the repository
     
 Switch to the project folder (**Before this You must move the project folder to /var/www/html if on a LAMP server or inside htdocs if on a XAMPP or WAMP server**)
 
-    cd Student-Management-System-main
+    cd Student-Management-System
 
 Install all the dependencies using composer
 
