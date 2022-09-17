@@ -33,7 +33,7 @@ Install all the dependencies using composer
     composer install
     
     
-Install all the javascript dependencies using npm (Since we are using React & Inertia for frontend - **If You are not installed Nodejs On your system first install it and try to run npm commands**)
+Install all the javascript dependencies using npm (Since we are using React & Inertia for frontend - **If You are not installed Nodejs (v16.17.0 is preffered) On your system first install it and try to run npm commands**)
 
     npm install    
 
